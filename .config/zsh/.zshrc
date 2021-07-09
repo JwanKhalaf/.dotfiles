@@ -83,6 +83,14 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# run startx automatically
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi
+
+# set up node version manager (nvm)
+source /usr/share/nvm/init-nvm.sh
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
