@@ -9,7 +9,7 @@ alias restart="sudo systemctl restart"
 alias dp="docker ps"
 
 # configs
-alias zrc="nvim ~/.zshrc"
+alias zrc="nvim ~/.config/zsh/.zshrc"
 alias vrc="nvim ~/.config/nvim/init.vim"
 alias xrc="nvim ~/.xinitrc"
 
