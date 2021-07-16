@@ -70,6 +70,9 @@ set updatetime=50
 " vertical bar for line length
 set colorcolumn=80
 
+" make "+y copy to system clipboard
+set clipboard=unnamedplus
+
 " plugin manager
 
 call plug#begin('~/.vim/plugged')
