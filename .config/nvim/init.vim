@@ -70,9 +70,8 @@ set updatetime=50
 " vertical bar for line length
 set colorcolumn=80
 
-" set the fold method
-set foldmethod=expr
-set foldexpr=nvim_treesitter#foldexpr()
+" make "+y copy to system clipboard
+set clipboard=unnamedplus
 
 " plugin manager
 call plug#begin('~/.vim/plugged')

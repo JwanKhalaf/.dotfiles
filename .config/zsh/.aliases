@@ -1,0 +1,25 @@
+# systemctl
+alias st="sudo systemctl status"
+alias enable="sudo systemctl enable"
+alias start="sudo systemctl start"
+alias stop="sudo systemctl stop"
+alias restart="sudo systemctl restart"
+
+# docker
+alias dp="docker ps"
+
+# configs
+alias zrc="nvim ~/.config/zsh/.zshrc"
+alias vrc="nvim ~/.config/nvim/init.vim"
+alias xrc="nvim ~/.xinitrc"
+
+# journal
+alias j="journalctl"
+
+# linux basic commands
+alias ls="exa -lh"
+alias lsa="exa -lah"
+alias cat="bat"
+
+# programs
+alias v="nvim"
