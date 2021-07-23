@@ -70,8 +70,11 @@ set updatetime=50
 " vertical bar for line length
 set colorcolumn=80
 
-" plugin manager
+" set the fold method
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
 
+" plugin manager
 call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
@@ -83,9 +86,11 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-system-copy'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
