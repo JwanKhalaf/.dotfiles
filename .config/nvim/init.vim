@@ -90,6 +90,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-system-copy'
 Plug 'mattn/emmet-vim'
+Plug 'kyazdani42/nvim-web-devicons'
 
 call plug#end()
 
