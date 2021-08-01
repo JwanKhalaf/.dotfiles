@@ -254,3 +254,5 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
