@@ -101,6 +101,9 @@ autocmd vimenter * ++nested colorscheme gruvbox
 let mapleader = " "
 imap jj <Esc>
 
+" delete visually selected text and paste contents of register
+vnoremap <leader>p "_dP
+
 nnoremap <C-v-r> :Vex :vertical resize 40
 
 " coc configuration
