@@ -91,6 +91,7 @@ Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-system-copy'
 Plug 'mattn/emmet-vim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 
