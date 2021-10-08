@@ -91,6 +91,8 @@ Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-system-copy'
 Plug 'mattn/emmet-vim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 
@@ -105,6 +107,23 @@ imap jj <Esc>
 vnoremap <leader>p "_dP
 
 nnoremap <C-v-r> :Vex :vertical resize 40
+
+" reload config
+nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
+
+" move next in quickfix list
+nnoremap <C-j> :cnext<CR>
+
+" move back in quickfix list
+nnoremap <C-k> :cprev<CR>
+
+" visual mode - mode highlighted code up
+vnoremap J :m '>+1<CR>gv=gv
+
+" visual mode - mode highlighted code down
+vnoremap K :m '<-2<CR>gv=gv
+
+nnoremap <C-g>f :G diff --name-status develop<CR>
 
 " coc configuration
 
@@ -259,3 +278,4 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
+
