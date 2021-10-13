@@ -106,8 +106,6 @@ imap jj <Esc>
 " delete visually selected text and paste contents of register
 vnoremap <leader>p "_dP
 
-nnoremap <C-v-r> :Vex :vertical resize 40
-
 " reload config
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 
@@ -279,3 +277,14 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained",
+  ignore_install = {},
+  highlight = {
+    enable = true,
+    disable = {},
+    additional_vim_regex_highlighting = false,
+  },
+}
+EOF
