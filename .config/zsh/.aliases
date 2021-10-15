@@ -7,6 +7,8 @@ alias restart="sudo systemctl restart"
 
 # docker
 alias dp="docker ps"
+alias dv="docker volume ls"
+alias dvc="docker volume prune"
 
 # configs
 alias zrc="nvim ~/.config/zsh/.zshrc"
@@ -23,3 +25,10 @@ alias cat="bat"
 
 # programs
 alias v="nvim"
+alias i="sxiv"
+
+# shortcuts
+alias ep="echo $PATH"
+alias h="cd"
+alias c="clear"
+alias e="exit"
