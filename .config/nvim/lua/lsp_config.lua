@@ -100,14 +100,3 @@ local formatFiletypes = {
     typescript = "prettier",
     typescriptreact = "prettier"
 }
-
-nvim_lsp.diagnosticls.setup {
-    on_attach = on_attach,
-    filetypes = vim.tbl_keys(filetypes),
-    init_options = {
-        filetypes = filetypes,
-        linters = linters,
-        formatters = formatters,
-        formatFiletypes = formatFiletypes
-    }
-}
