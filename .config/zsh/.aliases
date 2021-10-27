@@ -19,8 +19,8 @@ alias xrc="nvim ~/.xinitrc"
 alias j="journalctl"
 
 # linux basic commands
-alias ls="exa -lh"
-alias lsa="exa -lah"
+alias ls="exa -lhg"
+alias lsa="exa -lahg"
 alias cat="bat"
 
 # programs
@@ -32,3 +32,6 @@ alias ep="echo $PATH"
 alias h="cd"
 alias c="clear"
 alias e="exit"
+alias t="tmux"
+alias ws="cd ~/code/mechanic360-site/; hugo server"
+alias wv="cd ~/code/mechanic360-site/; v ."
