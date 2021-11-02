@@ -156,6 +156,5 @@ require'nvim-treesitter.configs'.setup {
 }
 EOF
 
-lua require("lsp_config")
-
+" lsp config and nvim_cmp for completion
 lua require("completion")
