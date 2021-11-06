@@ -1,4 +1,4 @@
-  -- Setup nvim-cmp.
+  -- setup nvim-cmp.
   local cmp = require'cmp'
 
   cmp.setup({
@@ -31,14 +31,14 @@
     }
   })
 
-  -- Use buffer source for `/`.
+  -- use buffer source for `/`.
   cmp.setup.cmdline('/', {
     sources = {
       { name = 'buffer' }
     }
   })
 
-  -- Use cmdline & path source for ':'.
+  -- use cmdline & path source for ':'.
   cmp.setup.cmdline(':', {
     sources = cmp.config.sources({
       { name = 'path' }
@@ -47,7 +47,7 @@
     })
   })
 
-  -- Setup lspconfig.
+  -- setup lspconfig.
   local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
   local nvim_lsp = require 'lspconfig'
@@ -87,7 +87,7 @@
 
   -- use a loop to conveniently call 'setup' on multiple servers and
   -- map buffer local keybindings when the language server attaches
-  local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver' }
+  local servers = { 'clangd', 'gopls', 'rust_analyzer', 'pyright', 'tsserver' }
   for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
       on_attach = on_attach,
