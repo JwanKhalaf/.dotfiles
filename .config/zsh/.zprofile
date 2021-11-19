@@ -3,6 +3,9 @@
 # add go-lang bin directory to path
 export PATH=$PATH:/usr/local/go/bin
 
+# adding paths for go-lang
+export GOPATH=/home/j/go
+
 # initialising gnome keyring
 if [ -n "$DESKTOP_SESSION" ];then
   eval $(gnome-keyring-daemon --start)
