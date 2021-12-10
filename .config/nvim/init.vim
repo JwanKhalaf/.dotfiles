@@ -74,7 +74,7 @@ set colorcolumn=80
 set clipboard=unnamedplus
 
 " plugin manager
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugins')
 
 Plug 'itchyny/lightline.vim'
 Plug 'frazrepo/vim-rainbow'
