@@ -2,6 +2,13 @@
 
 # add .NET sdk directory to path
 export PATH=$PATH:~/.dotnet
+export PATH="$PATH:/home/j/.dotnet/tools"
+
+# add .NET environment variable
+export ASPNETCORE_ENVIRONMENT=Development
+
+# set pager for postgres
+export PSQL_PAGER="less -iMFXSx4R"
 
 # initialising gnome keyring
 if [ -n "$DESKTOP_SESSION" ];then
