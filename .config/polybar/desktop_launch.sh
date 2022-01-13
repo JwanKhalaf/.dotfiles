@@ -10,7 +10,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 0.2; done
 echo "---" | tee -a /tmp/polybar-main.log
 
 # load the main bar
-polybar -r main -c "$HOME/.config/polybar/config.ini" 2>&1 | tee -a /tmp/polybar-main.log & disown 
+polybar -r main -c "$HOME/.config/polybar/desktop_config.ini" 2>&1 | tee -a /tmp/polybar-main.log & disown 
 
 # log
 echo "main bar launched ..."
