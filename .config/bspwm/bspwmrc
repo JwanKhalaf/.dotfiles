@@ -13,8 +13,6 @@ bspc config gapless_monocle false
 bspc config click_to_focus true
 bspc config apply_floating_atom true
 bspc config history_aware_focus true
-#bspc config normal_border_color "#2E3440"
-#bspc config focused_border_color "#B48EAD"
 
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
@@ -33,6 +31,14 @@ xsetroot -cursor_name left_ptr &
 
 # polybar
 $HOME/.config/polybar/launch.sh &
+
+connected_display=$(xrandr --query |awk '/\<connected\>/{print $1}')
+
+if [ $connected_display = "DVI-I-1" ]; then
+  $HOME/.config/polybar/desktop_launch.sh &
+else
+  $HOME/.config/polybar/laptop_launch.sh &
+fi
 
 # dropbox
 dropbox start &
