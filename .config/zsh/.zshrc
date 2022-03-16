@@ -113,5 +113,8 @@ if [ -f ~/.config/zsh/.aliases ]; then
   source  ~/.config/zsh/.aliases
 fi
 
+# asdf setup
+. /opt/asdf-vm/asdf.sh
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

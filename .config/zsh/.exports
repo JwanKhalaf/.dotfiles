@@ -1,9 +1,24 @@
 # set xdg_config_home
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# add .net sdk directory to path
+export PATH="$PATH:~/.dotnet:~/.dotnet/tools"
+
+# .net root directory
+export DOTNET_ROOT="$HOME/.dotnet"
+
+# add jetbrains rider bin directory to path
+export PATH="$PATH:~/programs/JetBrains Rider-2021.3.3/bin"
+
+# add .NET environment variable
+export ASPNETCORE_ENVIRONMENT=Development
+
+# set pager for postgres
+export PSQL_PAGER="less -iMFXSx4R"
+
 # default editor
 export EDITOR='nvim'
 export VISUAL='nvim'
 
-# dotnet root directory
-DOTNET_ROOT="$HOME/.dotnet"
+# jetbrains rider required export
+export _JAVA_AWT_WM_NONREPARENTING=1
