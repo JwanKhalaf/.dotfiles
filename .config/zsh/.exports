@@ -2,7 +2,7 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # add .net sdk directory to path
-export PATH="$PATH:~/.dotnet:~/.dotnet/tools"
+export PATH="$PATH:$HOME/.dotnet:$HOME/.dotnet/tools"
 
 # .net root directory
 export DOTNET_ROOT="$HOME/.dotnet"
