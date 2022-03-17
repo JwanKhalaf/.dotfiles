@@ -88,9 +88,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# set up node version manager (nvm)
-source /usr/share/nvm/init-nvm.sh
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
