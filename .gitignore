@@ -1,2 +1,7 @@
 .config/kitty/kitty-themes/
 .config/kitty/theme.conf
+.config/nvim/plugins
+.config/zsh/.oh-my-zsh/
+.config/zsh/.p10k.zsh
+.config/zsh/.zcompdump
+.config/zsh/.zcompdump-PF35HG5T-5.4.2

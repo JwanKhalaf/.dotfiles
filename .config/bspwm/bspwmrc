@@ -29,9 +29,6 @@ eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh) ex
 # mouse pointer
 xsetroot -cursor_name left_ptr &
 
-# polybar
-$HOME/.config/polybar/launch.sh &
-
 connected_display=$(xrandr --query |awk '/\<connected\>/{print $1}')
 
 if [ $connected_display = "DVI-I-1" ]; then

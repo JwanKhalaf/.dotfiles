@@ -4,3 +4,14 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # default editor
 export EDITOR='nvim'
 export VISUAL='nvim'
+
+# work
+export COMPASS_REPOS_DIR=/home/j-khalaf/code/compass
+export COMPASS_URI_ROOT=local
+export COMPASS_SUT_URL=https://compass.local
+export MAIL_ORDER_DOMAIN=pbf.ichi.local
+export NOTIFICATION_EMAIL_ADDRESS=jwan.khalaf@infinityworks.com
+export COMPOSE_IGNORE_ORPHANS=1
+
+# postgres pager
+export PAGER='less -iMFXSx4R'

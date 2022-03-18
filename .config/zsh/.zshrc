@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # path to your oh-my-zsh installation.
-export ZSH="/home/j/.config/zsh/.oh-my-zsh"
+export ZSH="/home/j-khalaf/.config/zsh/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -21,6 +21,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 HISTSIZE=20000
 SAVEHIST=20000
 HISTFILE=~/.cache/zsh/history
+
+# asdf
+. $HOME/.asdf/asdf.sh
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -87,9 +90,6 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-# set up node version manager (nvm)
-source /usr/share/nvm/init-nvm.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
