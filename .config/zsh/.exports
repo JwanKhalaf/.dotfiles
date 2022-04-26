@@ -22,3 +22,13 @@ export VISUAL='nvim'
 
 # jetbrains rider required export
 export _JAVA_AWT_WM_NONREPARENTING=1
+wmname LG3D
+
+# add location of go-lang binaries to path environmental variable
+export PATH=$PATH:/usr/local/go/bin
+
+# set the gopath directory
+export GOPATH=/home/j/code/go
+
+# add location of local go-lang binaries to path environmental variable
+export PATH=$PATH:$GOPATH/bin
