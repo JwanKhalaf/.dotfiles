@@ -32,3 +32,6 @@ export GOPATH=/home/j/code/go
 
 # add location of local go-lang binaries to path environmental variable
 export PATH=$PATH:$GOPATH/bin
+
+# node version manager (nvm)
+export NVM_SYMLINK_CURRENT=true
