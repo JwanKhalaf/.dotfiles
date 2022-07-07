@@ -37,6 +37,9 @@ else
   $HOME/.config/polybar/laptop_launch.sh &
 fi
 
+# wmname
+wmname LG3D
+
 # dropbox
 dropbox start &
 

@@ -5,6 +5,13 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR='nvim'
 export VISUAL='nvim'
 
+# add .NET sdk directory to path
+export PATH=$PATH:~/.dotnet
+export PATH="$PATH:/home/j/.dotnet/tools"
+
+# add .NET environment variable
+export ASPNETCORE_ENVIRONMENT=Development
+
 # work
 export COMPASS_REPOS_DIR=/home/j-khalaf/code/compass
 export COMPASS_URI_ROOT=local
@@ -12,6 +19,10 @@ export COMPASS_SUT_URL=https://compass.local
 export MAIL_ORDER_DOMAIN=pbf.ichi.local
 export NOTIFICATION_EMAIL_ADDRESS=jwan.khalaf@infinityworks.com
 export COMPOSE_IGNORE_ORPHANS=1
+export PATH=$PATH:~/.local/bin
 
 # postgres pager
 export PAGER='less -iMFXSx4R'
+
+# jetbrains
+export _JAVA_AWT_WM_NONREPARENTING=1

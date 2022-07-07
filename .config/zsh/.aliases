@@ -14,18 +14,23 @@ alias dvc="docker volume prune"
 alias zrc="nvim ~/.config/zsh/.zshrc"
 alias vrc="nvim ~/.config/nvim/init.vim"
 alias xrc="nvim ~/.xinitrc"
+alias zsrc="source ~/.config/zsh/.zshrc"
 
 # journal
 alias j="journalctl"
 
 # linux basic commands
-alias ls="exa -lhg"
+alias l="exa -lahg --group-directories-first"
 alias lsa="exa -lahg"
 alias cat="bat"
 
 # programs
 alias v="nvim"
 alias i="sxiv"
+alias awsume=". awsume"
+alias cs="cage status"
+alias cl="cage logs -f"
+alias rg="rg --color=always"
 
 # shortcuts
 alias ep="echo $PATH"
@@ -33,7 +38,8 @@ alias h="cd"
 alias c="clear"
 alias e="exit"
 alias t="tmux"
-alias w="cd ~/code/compass/"
-alias wu="cd ~/code/compass/compass-ui/"
-alias wd="cd ~/code/compass/compass-dev/cage/compass-dev"
-alias ws="cd ~/code/compass/compass-service"
+alias w="cd ~/code/rooster/"
+alias wu="cd ~/code/rooster/rooster-money-app-v2/"
+alias wdb="cd ~/code/rooster/rooster-payments-dbschema"
+alias wns="cd ~/code/rooster/rooster-node-services"
+alias wpp="cd ~/code/rooster/rooster-payments-processor"

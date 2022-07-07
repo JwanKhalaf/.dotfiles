@@ -100,6 +100,7 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
@@ -121,6 +122,11 @@ nnoremap <C-j> :cnext<CR>
 
 " move back in quickfix list
 nnoremap <C-k> :cprev<CR>
+
+" dealing with yaml indentation
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+let g:indentLine_char = '⦙'
+let g:vim_json_conceal=0
 
 " visual mode - mode highlighted code up
 vnoremap J :m '>+1<CR>gv=gv
@@ -145,7 +151,7 @@ let g:prettier#autoformat_require_pragma = 0
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = "maintained",
+  ensure_installed = "all",
   ignore_install = {},
   highlight = {
     enable = true,
