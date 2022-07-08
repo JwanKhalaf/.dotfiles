@@ -19,8 +19,8 @@ alias xrc="nvim ~/.xinitrc"
 alias j="journalctl"
 
 # linux basic commands
-alias ls="exa -lhg --group-directories-first"
-alias lsa="exa -lahg"
+alias l="exa -lhg --group-directories-first"
+alias la="exa -lahg --group-directories-first"
 alias cat="bat"
 
 # programs
