@@ -12,7 +12,7 @@ alias dvc="docker volume prune"
 
 # configs
 alias zrc="nvim ~/.config/zsh/.zshrc"
-alias vrc="nvim ~/.config/nvim/init.vim"
+alias vrc="nvim ~/.config/nvim/init.lua"
 alias xrc="nvim ~/.xinitrc"
 
 # journal
