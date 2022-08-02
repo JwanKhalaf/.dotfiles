@@ -1,3 +1,6 @@
+-- set the leader key
+global.mapleader = " "
+
 -- block cursor (instead of a thin line)
 options.guicursor = ""
 
