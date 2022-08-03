@@ -46,9 +46,10 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-
 nvim_lsp.gopls.setup {
   cmd = {"gopls", "serve"},
+  on_attach = on_attach,
+  capabilities = capabilities,
   settings = {
     gopls = {
       analyses = {
