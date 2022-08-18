@@ -8,5 +8,11 @@ local inoremap = require("globals.ide-keymaps").inoremap
 -- remap to open netrw
 nnoremap("<leader>pv", "<cmd>Ex<CR>")
 
+-- telescope
+nnoremap("<leader>ff", "<cmd>Telescope find_files<cr>")
+nnoremap("<leader>fg", "<cmd>Telescope live_grep<cr>")
+nnoremap("<leader>fb", "<cmd>Telescope buffers<cr>")
+nnoremap("<leader>fh", "<cmd>Telescope help_tags<cr>")
+
 -- remap to exit insert mode
 inoremap("jj", "<ESC>")
