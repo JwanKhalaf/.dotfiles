@@ -17,3 +17,6 @@ require('lsp.lsp-config')
 
 -- load plugins
 require('plugins')
+
+-- load auto commands
+require('autocmds.commands')
