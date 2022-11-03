@@ -2,7 +2,7 @@ return require('packer').startup(function(use)
   -- allow packer (the plugin manager) to manage itself
   use 'wbthomason/packer.nvim'
 
-  use 'gruvbox-community/gruvbox'
+  use 'ellisonleao/gruvbox.nvim'
   use 'itchyny/lightline.vim'
   use 'frazrepo/vim-rainbow'
   use 'nvim-lua/popup.nvim'
