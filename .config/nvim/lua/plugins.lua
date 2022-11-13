@@ -10,7 +10,6 @@ return require('packer').startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-fzy-native.nvim'
   use 'prettier/vim-prettier'
-  use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
   use 'tpope/vim-commentary'
   use 'christoomey/vim-system-copy'
