@@ -40,9 +40,6 @@ else
   $HOME/.config/polybar/laptop_launch.sh &
 fi
 
-# dropbox
-dropbox start &
-
 # touchpad
 # hides mouse when you are not using it
 unclutter &
