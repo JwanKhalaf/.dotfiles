@@ -4,7 +4,6 @@ return require('packer').startup(function(use)
 
   use 'ellisonleao/gruvbox.nvim'
   use 'itchyny/lightline.vim'
-  use 'frazrepo/vim-rainbow'
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
