@@ -7,6 +7,9 @@ export PATH="$PATH:$HOME/.dotnet:$HOME/.dotnet/tools"
 # .net root directory
 export DOTNET_ROOT="$HOME/.dotnet"
 
+# opt out of .net telemetry
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
 # add jetbrains rider bin directory to path
 export PATH="$PATH:~/programs/JetBrains Rider-2021.3.3/bin"
 
