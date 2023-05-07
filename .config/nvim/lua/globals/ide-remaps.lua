@@ -16,3 +16,6 @@ nnoremap("<leader>fh", "<cmd>Telescope help_tags<cr>")
 
 -- remap to exit insert mode
 inoremap("jj", "<ESC>")
+
+-- remap for system copy
+nnoremap("<leader>y", "\"+y")

@@ -36,4 +36,7 @@ alias t="tmux"
 alias w="cd ~/code/digitalhud/ajgenerators.co.uk/"
 alias ws="cd ~/code/mechanic360/; hugo server -D"
 alias wv="cd ~/code/mechanic360/; v ."
-alias tree="tree -L 5 -I 'node_modules|cdk.out' --dirsfirst"
+alias tree="tree -L 5 -I 'node_modules|cdk.out|elm-stuff' --dirsfirst"
+
+# golang specific shortcuts
+alias gt="go test ./..."
