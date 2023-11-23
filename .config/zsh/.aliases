@@ -13,7 +13,6 @@ alias dvc="docker volume prune"
 # configs
 alias zrc="nvim ~/.config/zsh/.zshrc"
 alias vrc="nvim ~/.config/nvim/init.lua"
-alias xrc="nvim ~/.xinitrc"
 
 # journal
 alias j="journalctl"
@@ -22,6 +21,7 @@ alias j="journalctl"
 alias l="exa -lhg --group-directories-first"
 alias la="exa -lahg --group-directories-first"
 alias cat="bat"
+alias ip='LC_ALL=C pacman -Qi | awk "/^Name/{name=\$3} /^Installed Size/{print \$4\$5, name}" | sort -h'
 
 # programs
 alias v="nvim"
@@ -41,3 +41,4 @@ alias tree="tree -L 5 -I 'node_modules|cdk.out|elm-stuff|bin|obj' --dirsfirst"
 
 # golang specific shortcuts
 alias gt="go test ./..."
+
