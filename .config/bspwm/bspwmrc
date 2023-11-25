@@ -18,10 +18,6 @@ bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 bspc config merge_overlapping_monitors true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh) export SSH_AUTH_SOCK
@@ -34,10 +30,10 @@ $HOME/.config/polybar/launch.sh &
 
 connected_display=$(xrandr --query |awk '/\<connected\>/{print $1}')
 
-if [ $connected_display = "DVI-I-1" ]; then
-  $HOME/.config/polybar/desktop_launch.sh &
-else
+if [ $connected_display = "eDP1" ]; then
   $HOME/.config/polybar/laptop_launch.sh &
+else
+  $HOME/.config/polybar/desktop_launch.sh &
 fi
 
 # touchpad
