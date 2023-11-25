@@ -1,2 +1,6 @@
 .config/kitty/kitty-themes/
 .config/kitty/theme.conf
+.config/zsh/.oh-my-zsh/
+.config/zsh/.p10k.zsh
+.config/zsh/.zcompdump-j-desktop-5.9
+.config/zsh/.zcompdump-j-desktop-5.9.zwc
