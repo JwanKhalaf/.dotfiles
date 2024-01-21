@@ -16,6 +16,9 @@ export PATH="$PATH:~/programs/JetBrains Rider-2021.3.3/bin"
 # add .NET environment variable
 export ASPNETCORE_ENVIRONMENT=Development
 
+# set less program behaviour
+export LESS="--no-init --quit-if-one-screen -R"
+
 # set pager for postgres
 export PSQL_PAGER="less -iMFXSx4R"
 
@@ -33,8 +36,15 @@ export PATH=$PATH:/usr/local/go/bin
 # set the gopath directory
 export GOPATH=/home/j/code/go
 
+# go private
+export GOPRIVATE=bitbucket.org/thinkmoneyuk
+
 # add location of local go-lang binaries to path environmental variable
 export PATH=$PATH:$GOPATH/bin
 
 # node version manager (nvm)
 export NVM_SYMLINK_CURRENT=true
+
+# davinci resolve studio
+QT_DEVICE_PIXEL_RATIO=2
+QT_AUTO_SCREEN_SCALE_FACTOR=true
