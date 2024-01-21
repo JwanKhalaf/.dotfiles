@@ -26,6 +26,8 @@ alias cat="bat"
 # programs
 alias v="nvim"
 alias i="sxiv"
+alias ydl="yt-dlp -x --audio-format wav"
+alias cal="cal -m"
 
 # shortcuts
 alias ep="echo $PATH"
@@ -33,7 +35,7 @@ alias h="cd"
 alias c="clear"
 alias e="exit"
 alias t="tmux"
-alias w="cd ~/code/digitalhud/ajgenerators.co.uk/"
+alias w="cd ~/code/tm/onboarding"
 alias ws="cd ~/code/mechanic360/; hugo server -D"
 alias wv="cd ~/code/mechanic360/; v ."
 alias wt="cd ~/code/tictacgo/"
