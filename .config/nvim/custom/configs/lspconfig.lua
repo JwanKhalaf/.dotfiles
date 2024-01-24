@@ -5,22 +5,7 @@ local lspconfig = require("lspconfig")
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 lspconfig.gopls.setup({
-  on_attach = function (client, bufnr)
-    if client.supports_method("textDocument/formatting") then
-      vim.api.nvim_clear_autocmds({
-        group = augroup,
-        buffer = bufnr,
-      })
-
-      vim.api.nvim_create_autocmd("BufWritePre", {
-        group = augroup,
-        buffer = bufnr,
-        callback = function ()
-          vim.lsp.buf.format({bufnr = bufnr})
-        end,
-      })
-    end
-  end,
+  on_attach = on_attach,
   capabilities = capabilities,
   settings = {
     gopls = {
@@ -42,3 +27,10 @@ lspconfig.tsserver.setup({
   filetypes = {"typescript"},
   root_dir = lspconfig.util.root_pattern("sst.config.ts"),
 })
+
+lspconfig.elmls.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"elm"},
+  root_dir = lspconfig.util.root_pattern("elm.json")
+}

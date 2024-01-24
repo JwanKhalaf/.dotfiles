@@ -1,6 +1,9 @@
 # set xdg_config_home
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# set xdg_current_desktop for mimetypes
+export XDG_CURRENT_DESKTOP="bspwm"
+
 # add .net sdk directory to path
 export PATH="$PATH:$HOME/.dotnet:$HOME/.dotnet/tools"
 
