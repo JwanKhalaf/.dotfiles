@@ -20,7 +20,7 @@ super + Escape
 
 # set x11 keyboard layouts
 alt + shift {e, k}
-  {setxkbmap us, setxkbmap -layout sy -variant ku}
+  {setxkbmap gb, setxkbmap -layout sy -variant ku}
 
 #
 # bspwm hotkeys
