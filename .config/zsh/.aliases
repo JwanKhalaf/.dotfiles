@@ -7,8 +7,11 @@ alias restart="sudo systemctl restart"
 
 # docker
 alias dp="docker ps"
+alias di="docker image ls"
 alias dv="docker volume ls"
 alias dvc="docker volume prune"
+alias dcr="docker container rm"
+alias dir="docker image rm"
 
 # configs
 alias zrc="nvim ~/.config/zsh/.zshrc"
@@ -28,6 +31,8 @@ alias v="nvim"
 alias i="sxiv"
 alias ydl="yt-dlp -x --audio-format wav"
 alias cal="cal -m"
+alias el="elm-land"
+alias els="elm-land server"
 
 # shortcuts
 alias ep="echo $PATH"
@@ -35,7 +40,7 @@ alias h="cd"
 alias c="clear"
 alias e="exit"
 alias t="tmux"
-alias w="cd ~/code/tm/onboarding"
+alias w="cd ~/code/tm/correspondence/"
 alias ws="cd ~/code/mechanic360/; hugo server -D"
 alias wv="cd ~/code/mechanic360/; v ."
 alias wt="cd ~/code/tictacgo/"
