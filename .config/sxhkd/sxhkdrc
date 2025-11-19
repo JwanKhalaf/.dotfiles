@@ -8,7 +8,8 @@ control + comma
 
 # program launcher
 super + p
-	rofi -show drun
+	~/.config/rofi/launchers/type-6/launcher.sh 
+#rofi -show drun
 
 # screenshot program
 Print

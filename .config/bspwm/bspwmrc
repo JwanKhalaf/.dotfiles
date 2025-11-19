@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc wm -O DP-2 DP-4
+#bspc wm -O DP-4 DP-2
 
 bspc monitor 'DP-4' -d 6 7 8 9
 bspc monitor 'DP-2' -d 1 2 3 4 5
@@ -24,6 +24,9 @@ bspc config merge_overlapping_monitors true
 bspc rule -a Screenkey manage=off
 
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh) export SSH_AUTH_SOCK
+
+# enable num lock on startup
+numlockx on &
 
 # mouse pointer
 xsetroot -cursor_name left_ptr &

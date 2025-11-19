@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /home/j/code/.dotfiles status)",
+      "Bash(git -C /home/j/code/.dotfiles diff)",
+      "Bash(git -C /home/j/code/.dotfiles log --oneline -10)",
+      "Bash(git -C /home/j/code/.dotfiles add -A)",
+      "Bash(git -C /home/j/code/.dotfiles commit -m \"$(cat <<''EOF''\nupdate dotfiles with tmux, zsh, and desktop config changes\n\n- tmux: configure window/pane paths, catppuccin status bar, override vim-tmux-navigator bindings\n- zsh: clean up config, move nvm loading, add direnv/zoxide, update aliases\n- bspwm: add numlockx startup\n- polybar: add monitor identifier text\n- sxhkd: use custom rofi launcher\n- add sxiv and claude code config\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

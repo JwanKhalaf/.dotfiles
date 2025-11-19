@@ -25,14 +25,20 @@ alias j="journalctl"
 alias l="exa -lhg --group-directories-first"
 alias la="exa -lahg --group-directories-first"
 alias cat="bat"
+alias tree="tree -L 8 -I 'node_modules|cdk.out|elm-stuff|bin|obj' --dirsfirst"
 
 # programs
+alias cd="z"
 alias v="nvim"
 alias i="sxiv"
 alias ydl="yt-dlp -x --audio-format wav"
 alias cal="cal -m"
 alias el="elm-land"
 alias els="elm-land server"
+alias tf="terraform"
+alias tfl="terraform fmt --recursive && tflint --recursive"
+alias cl="claude"
+alias clc="claude --continue"
 
 # shortcuts
 alias ep="echo $PATH"
@@ -40,11 +46,14 @@ alias h="cd"
 alias c="clear"
 alias e="exit"
 alias t="tmux"
-alias w="cd ~/code/tm/correspondence/"
-alias ws="cd ~/code/mechanic360/; hugo server -D"
-alias wv="cd ~/code/mechanic360/; v ."
-alias wt="cd ~/code/tictacgo/"
-alias tree="tree -L 5 -I 'node_modules|cdk.out|elm-stuff|bin|obj' --dirsfirst"
+
+# work directories
+alias w="cd ~/code/gm/app/"
+alias wf="cd ~/code/gm/frontend/"
 
 # golang specific shortcuts
 alias gt="go test ./..."
+
+# dotnet
+alias dw="dotnet watch --project src/Core --launch-profile https"
+alias r="./reset.sh"
