@@ -26,7 +26,6 @@ alias l="exa -lhg --group-directories-first"
 alias la="exa -lahg --group-directories-first"
 alias cat="bat"
 alias tree="tree -L 8 -I 'node_modules|cdk.out|elm-stuff|bin|obj' --dirsfirst"
-alias rp="realpath"
 
 # programs
 alias cd="z"
@@ -40,6 +39,7 @@ alias tf="terraform"
 alias tfl="terraform fmt --recursive && tflint --recursive"
 alias cl="claude"
 alias clc="claude --continue"
+alias rp="realpath"
 
 # shortcuts
 alias ep="echo $PATH"
@@ -51,8 +51,6 @@ alias t="tmux"
 # work directories
 alias w="cd ~/code/gr/app/"
 alias ww="cd ~/code/gr/cli/"
-alias pw="cd ~/code/preventx/preventx.integrations.nhshometest/"
-alias aw="cd ~/code/avenue3/christie.ehr/"
 
 # golang specific shortcuts
 alias gt="go test ./..."
