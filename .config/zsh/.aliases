@@ -26,6 +26,7 @@ alias l="exa -lhg --group-directories-first"
 alias la="exa -lahg --group-directories-first"
 alias cat="bat"
 alias tree="tree -L 8 -I 'node_modules|cdk.out|elm-stuff|bin|obj' --dirsfirst"
+alias rp="realpath"
 
 # programs
 alias cd="z"
@@ -48,8 +49,10 @@ alias e="exit"
 alias t="tmux"
 
 # work directories
-alias w="cd ~/code/gm/app/"
-alias wf="cd ~/code/gm/frontend/"
+alias w="cd ~/code/gr/app/"
+alias ww="cd ~/code/gr/cli/"
+alias pw="cd ~/code/preventx/preventx.integrations.nhshometest/"
+alias aw="cd ~/code/avenue3/christie.ehr/"
 
 # golang specific shortcuts
 alias gt="go test ./..."

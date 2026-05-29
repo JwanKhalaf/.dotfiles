@@ -54,3 +54,7 @@ export NVM_SYMLINK_CURRENT=true
 # davinci resolve studio
 QT_DEVICE_PIXEL_RATIO=2
 QT_AUTO_SCREEN_SCALE_FACTOR=true
+
+
+# azure functions core tools cli
+export FUNC_CLI="$HOME/.AzureToolsForIntelliJ/AzureFunctionsCoreTools/v4/4.122.0/func"

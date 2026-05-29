@@ -4,8 +4,20 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 #bspc wm -O DP-4 DP-2
 
-bspc monitor 'DP-4' -d 6 7 8 9
-bspc monitor 'DP-2' -d 1 2 3 4 5
+# assign desktops based on which monitors are actually connected
+connected=$(xrandr --query | awk '/ connected/{print $1}')
+
+if echo "$connected" | grep -qx 'DP-2' && echo "$connected" | grep -qx 'DP-4'; then
+  # lightdm only enables the greeter's monitor; give both a mode
+  xrandr --output DP-2 --auto --primary --output DP-4 --auto --left-of DP-2
+  bspc wm -O DP-2 DP-4
+  bspc monitor 'DP-2' -d 1 2 3 4 5
+  bspc monitor 'DP-4' -d 6 7 8 9
+else
+  # single monitor: give it all nine desktops
+  primary=$(echo "$connected" | head -n1)
+  bspc monitor "$primary" -d 1 2 3 4 5 6 7 8 9
+fi
 
 bspc config border_width 2
 bspc config window_gap 12 
@@ -23,20 +35,29 @@ bspc config merge_overlapping_monitors true
 
 bspc rule -a Screenkey manage=off
 
-eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh) export SSH_AUTH_SOCK
-
 # enable num lock on startup
 numlockx on &
 
 # mouse pointer
 xsetroot -cursor_name left_ptr &
 
+# keyboard layout
+setxkbmap -layout gb &
+
+# compositor
+pgrep -x picom > /dev/null || picom -f &
+
+# wallpaper
+nitrogen --restore &
+
+# emoji picker
+pgrep -x emote > /dev/null || emote &
+
 # polybar
 $HOME/.config/polybar/launch.sh &
 
-connected_display=$(xrandr --query |awk '/\<connected\>/{print $1}')
-
-if [ $connected_display = "eDP1" ]; then
+# launch laptop polybar only when the laptop screen is the sole display
+if [ "$(echo "$connected" | wc -l)" -eq 1 ] && [ "$connected" = "eDP1" ]; then
   $HOME/.config/polybar/laptop_launch.sh &
 else
   $HOME/.config/polybar/desktop_launch.sh &
@@ -44,7 +65,7 @@ fi
 
 # touchpad
 # hides mouse when you are not using it
-unclutter &
+pgrep -x unclutter > /dev/null || unclutter &
 
 xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "libinput Natural Scrolling Enabled" 1
 xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "libinput Click Method Enabled" 0 1

@@ -91,4 +91,4 @@ eval "$(direnv hook zsh)"
 # setup zoxide
 eval "$(zoxide init zsh)"
 
-alias claude="/home/j/.claude/local/claude"
+export PATH="/home/j/.terragrunt/bin:$PATH"
