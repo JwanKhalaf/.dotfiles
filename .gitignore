@@ -3,3 +3,4 @@
 .config/zsh/.oh-my-zsh/
 .config/zsh/.p10k.zsh
 .config/zsh/.zcompdump*
+.config/zsh/.secrets
